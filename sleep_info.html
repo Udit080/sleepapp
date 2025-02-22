@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Health Advisory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="form">
+    <h1>Sleep Health Form</h1>
+    <button id="navigateButton1">Sleep Info </button>
+    <button id="navigateButton2">Chat and Reccomendations </button>
+    <form action="submit_form.php" method="post">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        
+        <label for="occupation">Occupation:</label>
+        <select id="occupation" name="occupation" required>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Sales Representative">Sales Representative</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Nurse">Nurse</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Accountant">Accountant</option>
+            <option value="Scientist">Scientist</option>
+            <option value="Lawyer">Lawyer</option>
+            <option value="Salesperson">Salesperson</option>
+            <option value="Manager">Manager</option>
+        </select>
+        
+        <label for="sleep_duration">Sleep Duration (hours/day):</label>
+        <input type="number" id="sleep_duration" name="sleep_duration" min="1" max="24" required>
+        
+        <label for="quality">Quality of Sleep (1-10):</label>
+        <input type="number" id="quality" name="quality" min="1" max="10" required>
+        
+        <label for="activity">Physical Activity (minutes/day):</label>
+        <input type="number" id="activity" name="activity" min="0" max="300" required>
+        
+        <label for="stress">Stress Level (1-10):</label>
+        <input type="number" id="stress" name="stress" min="1" max="10" required>
+        
+        <label for="bmi">BMI Category:</label>
+        <select id="bmi" name="bmi" required>
+            <option value="Normal">Normal</option>
+            <option value="Obese">Obese</option>
+            <option value="Overweight">Overweight</option>
+        </select>
+        
+        <label for="heart_rate">Heart Rate (bpm):</label>
+        <input type="number" id="heart_rate" name="heart_rate" min="60" max="170" required>
+        
+        <label for="steps">Daily Steps:</label>
+        <input type="number" id="steps" name="steps" min="0" max="10000" required>
+        
+        <label for="age">Age Group:</label>
+        <select id="age" name="age" required>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46-55">46-55</option>
+            <option value="55+">55+</option>
+        </select>
+        
+        <label for="blood_pressure">Blood Pressure Level:</label>
+        <select id="blood_pressure" name="blood_pressure" required>
+            <option value="Elevated">Elevated</option>
+            <option value="High (Stage 1)">High (Stage 1)</option>
+            <option value="High (Stage 2)">High (Stage 2)</option>
+            <option value="Normal">Normal</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>
